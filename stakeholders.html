@@ -35,7 +35,7 @@
 	<link rel="stylesheet" type="text/css" href="css/fonts.css">
 	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
 	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 	<!--Plugins styles-->
 
 	<link rel="stylesheet" type="text/css" href="css/jquery.mCustomScrollbar.css">
@@ -305,75 +305,18 @@
 
 
 
-<!-- Slider main container -->
-<div class="swiper-container">
-	<!-- Additional required wrapper -->
-	<div class="swiper-wrapper">
-		
-	  <!-- Slides -->
-	  
-	  <div class="swiper-slide">
-		<div class="align-center">
-			<img src="img/stakeolders/dossier.png" width="100%" height="auto"  alt="PPC">
-		</div>
-		
-	  </div>
-	  <div class="swiper-slide">
-
-		<div class="align-center">
-			<img src="img/stakeolders/dossier.png" width="100%" height="auto"  alt="PPC">
-		</div>
-	  </div>
-	  <div class="swiper-slide">Slide 3</div>
-
-	  ...
-	</div>
-
-	<!-- If we need pagination -->
-	<div class="swiper-pagination"></div>
-  
-	<!-- If we need navigation buttons -->
-	<div class="swiper-button-prev"></div>
-	<div class="swiper-button-next"></div>
-  
-	<!-- If we need scrollbar -->
-	<div class="swiper-scrollbar"></div>
+ <!-- Swiper -->
+ <div class="swiper-container">
+    <div class="swiper-wrapper align-center">
+      <div class="swiper-slide"><img src="img/stakeolders/dossier.png"></div>
+	  <div class="swiper-slide"><img src="img/stakeolders/dossier.png"></div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+    <!-- Add Arrows -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
   </div>
-	
-
-
-
-
-
-
-
-
-
-
-  <div class="swiper-container">
-	<div class="swiper-wrapper">
-	  <div class="swiper-slide">
-		<div class="swiper-zoom-container">
-		  <img src="img/Metodologia fullstack.jpg" />
-		</div>
-	  </div>
-	  <div class="swiper-slide">
-		<div class="swiper-zoom-container">
-		  <img src="img/metodo.svg" />
-		</div>
-	  </div>
-	  <div class="swiper-slide">Plain slide with text</div>
-	  <div class="swiper-slide">
-		<!-- Override maxRatio parameter -->
-		<div class="swiper-zoom-container" data-swiper-zoom="5">
-		  <img src="img/Metodologia fullstack.jpg" />
-		</div>
-	  </div>
-	</div>
-  </div>
-
-
-
 
 
 
@@ -955,9 +898,19 @@ Además, en caso de que se haya vulnerado cualquiera de tus derechos, el interes
 <script src="js/main.js"></script>
 <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-<!-- ManyChat -->
-<script src="//widget.manychat.com/110973363893104.js" async="async"></script>
-<!-- ...end JS Script -->
+<script>
+    var swiper = new Swiper('.swiper-container', {
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'progressbar',
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+
 
 </body>
 </html>
