@@ -1417,6 +1417,25 @@ body.author .blog-details-author {
 .overlay-olive {
   background: rgba(37, 39, 49, 0.8); }
 
+
+/* 2.1. ========== boton de wasap ==========*/
+
+
+.btn-whatsapp {
+  display:block;
+  width:50px;
+  height:50px;
+  color:#fff;
+  position: fixed;
+  left:30px;
+  bottom:80px;
+  border-radius:50%;
+  line-height:80px;
+  text-align:center;
+  z-index:999;
+}
+
+
 /*------------- #SERVICES --------------*/
 .services-main {
   padding: 60px 40px 60px 0; }
